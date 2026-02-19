@@ -1,7 +1,8 @@
 # comments begin with #
 
 # for convenience, define variable $(OBJS) to list of object files
-OBJS= draw_shapes.o draw_chars.o 5x7-font.o uimain.o
+# Added the 8 by 12 font to the make file so it would turn it into an object file
+OBJS= draw_shapes.o draw_chars.o 5x7-font.o uimain.o 8x12-font.o 11x16font.c
 
 # make has a "default rule" specifying how to build a an "object" file (.o) from a C source file (.c)
 #            this rule includes $(CFLAGS) as one of cc's parameters 
